@@ -1,3 +1,4 @@
+import 'package:fruit_shop/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,11 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Sora"),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: Text("Hello, World!"),
-        ),
-      ),
+      home: Home(),
     );
   }
 }
