@@ -3,6 +3,10 @@ import 'package:fruit_shop/model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+/// The main home screen of the Fruit Shop application.
+/// 
+/// This widget displays a carousel of banners and a horizontal list of
+/// categories for the user to browse.
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -11,12 +15,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  /// List of image paths for the banner carousel.
   List<String> items = [
     "assets/banners/Slider 1.png",
     "assets/banners/Slider 2.png",
     "assets/banners/Slider 3.png",
   ];
 
+  /// List of category models to be displayed in the horizontal category list.
   List<CategoryModel> category = [
     CategoryModel(name: 'Fruits', image: "assets/category/fruits.png"),
     CategoryModel(name: 'Milk & Egg', image: "assets/category/egg.png"),

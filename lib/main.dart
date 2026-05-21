@@ -1,10 +1,12 @@
 import 'package:fruit_shop/home.dart';
 import 'package:flutter/material.dart';
 
+/// Entry point of the Fruit Shop application.
 void main() {
   runApp(const MyApp());
 }
 
+/// The root widget of the application.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

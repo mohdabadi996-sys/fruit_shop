@@ -2,6 +2,7 @@ import 'package:fruit_shop/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+/// A splash screen that displays the app logo before navigating to the Home screen.
 class Splash extends StatefulWidget {
   const Splash({super.key});
 
@@ -12,8 +13,9 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   void initState() {
+    // Navigate to Home screen after a 1-second delay.
     Future.delayed(Duration(seconds: 1), () {
-      // التحقق من أن الشاشة لا تزال قائمة قبل الانتقال
+      // Check if the widget is still in the tree before navigating.
       if (mounted) {
         Navigator.pushReplacement(
           context,
